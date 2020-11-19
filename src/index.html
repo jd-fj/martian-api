@@ -4,8 +4,31 @@
 </head>
 <body>
   <div class="container">
-    <h1>Get Weather From Mars!</h1>
-    <div id="atmosphericTemp"></div>
+    <div class="jumbotron">
+      <h1>Martian Daily!</h1>
+    </div>
+    <div class="row">
+      <div id="weather" class="col-md-6">
+        <div class="card">
+          <h2 class="card-title" id="sol"></h2>
+          <div class="card-text">
+            <div id="atmosphericTemp"></div>
+            <div id="lowTemp"></div>
+            <div id="highTemp"></div>
+          </div>
+        </div>
+      </div>
+      <div id="weather1" class="col-md-6">
+        <div class="card">
+          <h2 class="card-title" id="sol1"></h2>
+          <div class="card-text">
+            <div id="atmosphericTemp1"></div>
+            <div id="lowTemp1"></div>
+            <div id="highTemp1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <h2>Photo of the Day:</h2>
     <div id="marsImage"></div>
     <h2>Search for more images:</h2>
@@ -15,6 +38,7 @@
     <div id="imgSearchResults">
     </div>
     <div id="errorSection"></div>
+  </div>
   </div>
 </body>
 </html>
