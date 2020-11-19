@@ -42,7 +42,7 @@ async function makeSearchCall(search) {
   const response = await ImgSearch.getImgSearch(search);
   getElements(response);
 }
-
+//---Below commented code is for random background image---
 // async function makeBackgroundCall(search) {
 //   const response = await ImgSearch.getImgSearch(search);
 //   background(response);
@@ -62,7 +62,8 @@ $(document).ready(function() {
   // console.log(makeBackgroundCall("earth"));
   makeApiCall();
   makeImgCall();
-  $('#searchClick').click(function(){
+  $('#searchBox').submit(function(event){
+    event.preventDefault();
     let search = $('#userSeach').val();
     $('#imgSearchResults').empty();
     makeSearchCall(search);

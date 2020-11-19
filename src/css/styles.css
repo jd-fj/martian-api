@@ -1,5 +1,8 @@
 body {
-  /* background-image: url(../src/assets/img/background.jpeg);  */
+  background-image: url(../assets/images/background.jpeg); 
+  color: gold;
+  font-family: 'Space Mono', monospace;
+  margin-bottom: 30px;
 }
 
 .jumbotron {
@@ -9,6 +12,10 @@ body {
 .card {
   margin: 10px;
   background-color: rgba(233, 233, 233, 0.495);
+}
+
+.card-title{
+  padding: 15px;
 }
 
 .card-text {

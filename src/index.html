@@ -1,5 +1,7 @@
 <html lang="en-US">
 <head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
   <title>Weather</title>
 </head>
 <body>
@@ -32,9 +34,11 @@
     <h2>Photo of the Day:</h2>
     <div id="marsImage"></div>
     <h2>Search for more images:</h2>
-    <label for="userSearch">Search Here:</label>
-    <input id="userSeach" type="text">
-    <button class="btn btn-warning" id="searchClick">Search!</button>
+    <form id="searchBox">
+      <label for="userSearch">Search Here:</label>
+      <input id="userSeach" type="text">
+      <button class="btn btn-warning" id="searchClick">Search!</button>
+    </form>
     <div id="imgSearchResults">
     </div>
     <div id="errorSection"></div>

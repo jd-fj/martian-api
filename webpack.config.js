@@ -16,7 +16,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Shape Tracker',
+      title: 'Martian Daily',
       template: './src/index.html',
       inject: 'body'
     }),
@@ -36,7 +36,6 @@ module.exports = {
           }
         ]
       },
-      
       {
         test:/\.html$/,
         use: [
